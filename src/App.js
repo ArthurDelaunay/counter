@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Counter from "./components/Counter"
 
 class App extends React.Component {
   constructor () {
@@ -22,9 +23,11 @@ class App extends React.Component {
     return (
         <div>
           <h1>Counter</h1>
-          <h2>{this.state.count}</h2>
-          <button type="button" onClick={this.handleClickIncrement} class="btn btn-outline-success">+</button>
-          <button type="button" onClick={this.handleClickDecrement} class="btn btn-outline-danger">-</button>
+          <Counter 
+            count={this.state.count}
+            increment={this.handleClickIncrement}
+            decrement={this.handleClickDecrement}
+          />
         </div>  
     )
  }
