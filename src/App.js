@@ -22,8 +22,6 @@ class App extends React.Component {
           count1: this.state.count1 +1
         })
       }
-      
-
     }
   }
   handleClickDecrementCount1 = () => {
@@ -52,7 +50,7 @@ class App extends React.Component {
           count2: this.state.count2 -1
         })
       }
-      
+            
     }
   }
 
@@ -64,7 +62,7 @@ class App extends React.Component {
           <Counter 
             count={this.state.count1}
             increment={this.handleClickIncrementCount1}
-            decrement={this.handleClickDecrementCount1}
+            substract={this.handleClickDecrementCount1}
           />
           <h2>Counter 2</h2>
           <Counter 
@@ -72,7 +70,7 @@ class App extends React.Component {
             increment={this.handleClickIncrementCount2}
             decrement={this.handleClickDecrementCount2}
           />
-        </div>  
+        </div>
     )
  }
 }
